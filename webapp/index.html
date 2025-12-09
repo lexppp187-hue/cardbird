@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CardBird</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <nav>
+      <button data-page="home">Главная</button>
+      <button data-page="inventory">Инвентарь</button>
+      <button data-page="profile">Профиль</button>
+      <button data-page="settings">Настройки</button>
+      <button data-page="top">Топ</button>
+    </nav>
+
+    <main>
+      <section id="home" class="page">
+        <h1>Открыть пакет</h1>
+        <button id="openPack">Открыть пакет (раз в 30 минут)</button>
+        <div id="packResult"></div>
+      </section>
+
+      <section id="inventory" class="page hidden">
+        <h1>Инвентарь</h1>
+        <div id="inventoryList"></div>
+      </section>
+
+      <section id="profile" class="page hidden">
+        <h1>Профиль</h1>
+        <div id="profileInfo"></div>
+      </section>
+
+      <section id="settings" class="page hidden">
+        <h1>Настройки</h1>
+        <div>Настроек пока немного.</div>
+      </section>
+
+      <section id="top" class="page hidden">
+        <h1>Топ игроков</h1>
+        <div id="topList"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
